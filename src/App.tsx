@@ -18,7 +18,7 @@ setupIonicReact();
 function App() {
   return (
     <IonApp>
-      <IonReactRouter>
+      <IonReactRouter basename={import.meta.env.BASE_URL}>
         <IonRouterOutlet onPointerEnterCapture={() => { }} onPointerLeaveCapture={() => { }}>
           <Route path="/home" render={() => <HomePage />} />
           <Route path="/new" render={() => <NewPage />} />
