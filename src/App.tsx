@@ -10,6 +10,8 @@ import '@ionic/react/css/typography.css';
 
 import HomePage from './pages/home/index.page';
 import NewPage from './pages/new.page';
+import EditPage from './pages/edit.page';
+import PreviewPage from './pages/preview.page';
 
 setupIonicReact();
 
@@ -20,6 +22,8 @@ function App() {
         <IonRouterOutlet onPointerEnterCapture={() => { }} onPointerLeaveCapture={() => { }}>
           <Route path="/home" render={() => <HomePage />} />
           <Route path="/new" render={() => <NewPage />} />
+          <Route path="/edit/:id" render={props => <EditPage {...props} />} />
+          <Route path="/preview/:id" render={props => <PreviewPage {...props} />} />
           <Redirect exact from="/" to="/home" />
         </IonRouterOutlet>
       </IonReactRouter>
