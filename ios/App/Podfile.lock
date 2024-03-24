@@ -2,12 +2,15 @@ PODS:
   - Capacitor (5.7.3):
     - CapacitorCordova
   - CapacitorCordova (5.7.3)
+  - CapacitorDialog (5.0.7):
+    - Capacitor
   - CapacitorPreferences (5.0.7):
     - Capacitor
 
 DEPENDENCIES:
   - "Capacitor (from `../../node_modules/.pnpm/@capacitor+ios@5.7.3_@capacitor+core@5.7.3/node_modules/@capacitor/ios`)"
   - "CapacitorCordova (from `../../node_modules/.pnpm/@capacitor+ios@5.7.3_@capacitor+core@5.7.3/node_modules/@capacitor/ios`)"
+  - "CapacitorDialog (from `../../node_modules/.pnpm/@capacitor+dialog@5.0.7_@capacitor+core@5.7.3/node_modules/@capacitor/dialog`)"
   - "CapacitorPreferences (from `../../node_modules/.pnpm/@capacitor+preferences@5.0.7_@capacitor+core@5.7.3/node_modules/@capacitor/preferences`)"
 
 EXTERNAL SOURCES:
@@ -15,14 +18,17 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/.pnpm/@capacitor+ios@5.7.3_@capacitor+core@5.7.3/node_modules/@capacitor/ios"
   CapacitorCordova:
     :path: "../../node_modules/.pnpm/@capacitor+ios@5.7.3_@capacitor+core@5.7.3/node_modules/@capacitor/ios"
+  CapacitorDialog:
+    :path: "../../node_modules/.pnpm/@capacitor+dialog@5.0.7_@capacitor+core@5.7.3/node_modules/@capacitor/dialog"
   CapacitorPreferences:
     :path: "../../node_modules/.pnpm/@capacitor+preferences@5.0.7_@capacitor+core@5.7.3/node_modules/@capacitor/preferences"
 
 SPEC CHECKSUMS:
   Capacitor: 7b5eb47c6125e9b58a3e3cd02fe366fc58adc89c
   CapacitorCordova: a377c52a28dbb3b895c0f71187f7b1777fee69db
+  CapacitorDialog: ea1beaccb7f825191aa18b72cba8981b881b3b2d
   CapacitorPreferences: 77ac427e98db83bace772455f8ba447430382c4c
 
-PODFILE CHECKSUM: e6aaacd329a0f2999f0f4709e9e84395bb74c8b3
+PODFILE CHECKSUM: 8afe4966c1a201eb5666bab8aebcbc19f4abd5c4
 
 COCOAPODS: 1.14.3
