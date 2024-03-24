@@ -44,7 +44,7 @@ export default function NewPage() {
           </IonButtons>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen={true}>
+      <IonContent fullscreen className="ion-padding">
         <form onSubmit={handleSubmit(onValid, console.error)}>
           <IonInput {...register('title')} placeholder="今日のタイトル"></IonInput>
           <IonTextarea {...register('content')} placeholder="どんな一日でしたか?"></IonTextarea>

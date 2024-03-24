@@ -23,7 +23,7 @@ export default function PreviewPage({ match }: RouteComponentProps<{
           <IonTitle>{data?.date}</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonContent fullscreen className="ion-padding">
         <h1>{data?.title}</h1>
         <p>{data?.content}</p>
         <IonFab slot="fixed" vertical="bottom" horizontal="end">
