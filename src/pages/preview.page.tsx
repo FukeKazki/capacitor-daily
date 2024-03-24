@@ -25,7 +25,9 @@ export default function PreviewPage({ match }: RouteComponentProps<{
       </IonHeader>
       <IonContent fullscreen className="ion-padding">
         <h1>{data?.title}</h1>
-        <p>{data?.content}</p>
+        <p style={{
+          whiteSpace: 'pre-wrap',
+        }}>{`${data?.content}`}</p>
         <IonFab slot="fixed" vertical="bottom" horizontal="end">
           <IonFabButton routerLink={`/edit/${data?.id}`}>
             <IonIcon icon={pencilOutline}></IonIcon>

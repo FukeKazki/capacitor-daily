@@ -12,7 +12,7 @@ export default function DailyPage() {
           <IonTitle>Daily</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen={true}>
+      <IonContent fullscreen className="ion-padding">
         <IonList>
           {data && data.map(daily => (
             <IonItem key={daily.id}>
@@ -26,8 +26,8 @@ export default function DailyPage() {
             </IonItem>
           ))}
           {isLoading && <IonItem>読み込み中</IonItem>}
-          {!isLoading && !data && <IonItem>日記がありません。右下のボタンを押して日記を書こう!</IonItem>}
         </IonList>
+        {!isLoading && data?.length === 0 && <p>右下のボタンを押して日記を書こう!</p>}
         <IonFab slot="fixed" vertical="bottom" horizontal="end">
           <IonFabButton routerLink="/new">
             <IonIcon icon={pencilOutline}></IonIcon>

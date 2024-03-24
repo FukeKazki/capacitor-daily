@@ -58,7 +58,7 @@ export default function EditPage({ match }: RouteComponentProps<{
       <IonContent fullscreen className="ion-padding">
         <form onSubmit={handleSubmit(onValid, console.error)}>
           <IonInput {...register('title')} placeholder="今日のタイトル"></IonInput>
-          <IonTextarea {...register('content')} placeholder="どんな一日でしたか?"></IonTextarea>
+          <IonTextarea {...register('content')} placeholder="どんな一日でしたか?" autoGrow></IonTextarea>
           <button ref={submitButtonRef} type="submit" style={{ display: 'none' }}></button>
         </form>
       </IonContent>
